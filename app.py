@@ -118,10 +118,6 @@ elif page == "Hasil Evaluasi":
     - **Cluster 2** 🟡  
     Pasien dengan tekanan darah, kolesterol, dan oldpeak paling tinggi di antara semua cluster, serta usia tua.  
     🔍 **Risiko terkena penyakit jantung sedang** *(rata-rata target: 39%)*
-
-    ---
-
-    Clustering ini membantu mengelompokkan pasien berdasarkan pola kesehatan mereka, sehingga strategi pencegahan dapat disesuaikan untuk setiap kelompok risiko.
     """)
 
 
