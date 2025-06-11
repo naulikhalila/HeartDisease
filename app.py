@@ -105,19 +105,42 @@ elif page == "Hasil Evaluasi":
     st.dataframe(cluster_summary.style.format("{:.2f}"))
 
     st.markdown("""
-    ### 📘 Interpretasi Clustering
+    🔍 Profil Setiap Cluster
+Cluster 0 🟢 "Pasien Usia Lanjut Risiko Rendah"
 
-    - **Cluster 0** 🟢  
-    Pasien usia lebih tua (rata-rata 59 tahun) dengan kolesterol dan nilai oldpeak yang tinggi, namun detak jantung maksimum rendah.  
-    🔍 **Risiko terkena penyakit jantung lebih kecil** *(rata-rata target: 24%)*
+👥 Karakteristik:
+Usia: 59.07 tahun (usia lanjut)
+Tekanan darah: 126.39 mmHg (normal)
+Kolesterol: 229.71 mg/dl (rendah)
+Detak jantung maksimum: 127.46 bpm (rendah)
+Oldpeak: 1.91 (tinggi - menunjukkan kondisi jantung yang stabil saat istirahat)
 
-    - **Cluster 1** 🔴  
-    Pasien usia lebih muda (rata-rata 48 tahun), memiliki detak jantung maksimum tertinggi dan oldpeak rendah.  
-    🔍 **Risiko terkena penyakit jantung paling tinggi** *(rata-rata target: 76%)*
+🎯 Tingkat Risiko: RENDAH (24%)
+💡 Interpretasi: Meskipun berusia lanjut, kelompok ini memiliki profil kardiovaskular yang relatif sehat dengan kolesterol rendah dan tekanan darah normal.
 
-    - **Cluster 2** 🟡  
-    Pasien dengan tekanan darah, kolesterol, dan oldpeak paling tinggi di antara semua cluster, serta usia tua.  
-    🔍 **Risiko terkena penyakit jantung sedang** *(rata-rata target: 39%)*
+Cluster 1 🔴 "Pasien Muda Risiko Tinggi"
+
+👥 Karakteristik:
+Usia: 48.46 tahun (termuda)
+Tekanan darah: 125.43 mmHg (normal)
+Kolesterol: 233.76 mg/dl (sedang)
+Detak jantung maksimum: 163.92 bpm (tinggi)
+Oldpeak: 0.40 (rendah - menunjukkan respons jantung yang tidak normal)
+
+🎯 Tingkat Risiko: TINGGI (76%)
+💡 Interpretasi: Kelompok ini meski relatif muda, tetapi memiliki risiko tertinggi. Detak jantung maksimum yang tinggi dan oldpeak yang rendah menunjukkan adanya gangguan fungsi jantung.
+
+Cluster 2 🟡 "Pasien Usia Lanjut Risiko Sedang"
+
+👥 Karakteristik:
+Usia: 60.24 tahun (tertua)
+Tekanan darah: 150.88 mmHg (tinggi)
+Kolesterol: 292.06 mg/dl (tinggi)
+Detak jantung maksimum: 148.20 bpm (sedang)
+Oldpeak: 1.31 (sedang)
+
+🎯 Tingkat Risiko: SEDANG (39%)
+💡 Interpretasi: Kelompok ini memiliki faktor risiko klasik (usia lanjut, hipertensi, kolesterol tinggi) namun masih dalam kategori risiko sedang.
     """)
 
 
